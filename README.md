@@ -16,7 +16,7 @@ Task is for each payment (pay_id) there should output in one line:
 6. Receiver’s amount and currency (to_cur, to_amt_base)
 
 ## PreRequisites
-
+```sql
 create schema if not exists dwh;
 
 create table dwh.transaction_details (
@@ -32,10 +32,11 @@ create table dwh.transaction_details (
     to_prv_bal_id  VARCHAR(50),
     flow_num       INTEGER NOT NULL
 );
+```
 
--- Import CSV 'init/transaction_details.csv'
+Import CSV [init/transaction_details.csv](init/transaction_details.csv)
 
 ## Solution
 
-See 'sql/task_solution.sql'.
+See [sql/postgres.sql](sql/task_solution.sql).
 
